@@ -61,7 +61,7 @@ after this we evaluate on the video the link of results provided bellow:
   asssssss
 ```
 ## Phase 3: Pseudo-Labeling & Refinement
-Run pseudo-label generation:
+1.Run pseudo-label generation:
 ```bash
 python3 create_pesudo_labels.py
 ```
@@ -69,12 +69,43 @@ Outputs:
 ```bash
 /YOUR_DIR/PESUDO_LABELS/{images,labels}
 ```
+2.Retrain with merged dataset (synthetic + pseudo):
+
+```bash
+python3 train_with_pesudo.py
+
+```
+
+
+## Image inference
+
+Update paths inside predict.py:
+```bash
+model_path = "weights/best.pt"
+image_path = "sample.png"
+output_image_path = "output.jpg"
+```
+
+Run:
+```bash
+python predict.py
+```
 
 
 
+## Video inference
 
+Update paths inside video.py:
+```bash
 
+model_path = "weights/best.pt"
+video_path = "input.mp4"
+output_video_path = "output.mp4"
+```
 
+Run:
+```bash
+python video.py
 
-
+```
 
