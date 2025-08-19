@@ -88,7 +88,7 @@ output_image_path = "output.jpg"
 
 Run:
 ```bash
-python predict.py
+python3 predict.py
 ```
 
 
@@ -105,7 +105,7 @@ output_video_path = "output.mp4"
 
 Run:
 ```bash
-python video.py
+python3 video.py
 
 ```
 
