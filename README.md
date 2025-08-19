@@ -54,7 +54,7 @@ The generator already handles keypoint extraction and train/val split building.
 ## Phase 2: Train on Synthetic Data
 Train on the sythetic data set using yolo11x-pose
 ```bash
-python train_with_synthetic.py
+python3 train_with_synthetic.py
 ```
 after this we evaluate on the video the link of results provided bellow:
 ```bash
