@@ -56,10 +56,7 @@ Train on the sythetic data set using yolo11x-pose
 ```bash
 python3 train_with_synthetic.py
 ```
-after this we evaluate on the video the link of results provided bellow:
-```bash
-  asssssss
-```
+
 ## Phase 3: Pseudo-Labeling & Refinement
 1.Run pseudo-label generation:
 ```bash
@@ -108,4 +105,5 @@ Run:
 python3 video.py
 
 ```
-
+After this we evaluate on the video the link of results provided with model weights bellow:
+[Surigal_2D_Pose_Google Drive Folder](https://drive.google.com/drive/folders/1B4zjFWaf5tngw3oOqnTNtEHWG6FRDidf?usp=sharing)
