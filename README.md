@@ -8,7 +8,7 @@ The workflow combines **synthetic data generation** with **domain adaptation via
 
 ## 📌 Pipeline Overview
 1. **Synthetic Data Generation** with BlenderProc (`synthetic_data_generator.py`)
-2. **Train on Synthetic Data** (YOLO Pose)
+2. **Train on Synthetic Data** (`train_synthetic.py`)
 3. **Generate Pseudo-Labels** on real videos (`create_pesudo_labels.py`)
 4. **Retrain with Synthetic + Pseudo-Labeled Data** (`domain_adoption.py`)
 5. **Inference** on images & videos (`predict.py`, `video.py`)
