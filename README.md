@@ -35,8 +35,22 @@ pip install -r requirements.txt
 ## Phase 1: Synthetic data generation
 We render images of needle holders and tweezers, place random clutter & lights, optionally add white occluders, and export:
 RGB JPEGs, HDF5 (BlenderProc outputs),
-Pose keypoints (5 per object) in YOLO format,
 a visualized image with the 5 keypoints overlaid.
+
+🔹 Keypoint Generation
+The ground truth (GT) keypoints are generated automatically from the synthetic segmentation masks, not manually labeled.
+
+For each tool:
+
+- Extract its layout from the segmentation map.
+
+- Find the two farthest points → endpoints.
+
+- Find one perpendicular extreme point → lateral side.
+
+- Run KMeans (k=2) on the contour → two midpoints.
+
+That gives 5 keypoints per instrument, saved in YOLO-pose format with bounding box + keypoints.
 
 Commands:
 ```bash
