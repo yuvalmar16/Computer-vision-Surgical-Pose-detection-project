@@ -72,7 +72,7 @@ Outputs:
 2.Retrain with merged dataset (synthetic + pseudo):
 
 ```bash
-python3 train_with_pesudo.py
+python3 domain_adoption.py
 
 ```
 
